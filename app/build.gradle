@@ -10,7 +10,7 @@ android {
         applicationId "com.tencent.ppocrv5ncnn"
         archivesBaseName = "$applicationId"
 
-        minSdk 24
+        minSdk 21
 
         externalNativeBuild {
             cmake {
@@ -26,13 +26,13 @@ android {
         }
     }
 
-    dependencies {
-        implementation 'com.android.support:support-v4:24.0.0'
-    }
-
     packaging {
         jniLibs {
             useLegacyPackaging true
         }
     }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:24.0.0'
 }
